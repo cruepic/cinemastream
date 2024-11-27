@@ -32,33 +32,37 @@ section {
 
 /*style pour le conteneur de bouttons*/ 
 .button-container{
-    margin-top: 10px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
-/*style pour le bouton random*/
-
-.random{
-    background: #e67e22;
-}
+/*style pour le bouton avec id bnt random*/
 
 
-.random:hover{
-    background: #d3540d;
-}
-
-/*style pour les autres boutons*/
-
-.button{
-    background: #35424a;
-    color: #ffffff;
+#buttoRandom{
+    padding: 15px 30px;
+    font-size: 16px;
+    margin: 10px;
+    background-color: #007bff;
+    color: white;
     border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background 03s;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 
-.button hover{
-   background: #2c3e50;
+
+#buttonRandom:hover{
+    background: #d3540d;
+    color: #ffffff;
 }
+
+
+
+
+
+
 
 
