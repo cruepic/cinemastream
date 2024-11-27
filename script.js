@@ -23458,4 +23458,24 @@ let listeFilms = [
 
 // Afficher tous les films (Titre, Poster, Année, + si envie)
 
+// 1. Sélectionner l'élément HTML où afficher les films
+let filmsContainer = document.getElementById('movie-container');
+
+// 2. Créer une fonction pour afficher un film
+function afficherFilm(film) {
+   let cardFilm = `
+      <div class="movie-card">
+        <img src="${film.thumbnail}" alt="${film.title}">
+        <h2>${film.title}</h2>
+         <p>${film.year}</p>
+      </div>
+   `;
+   filmsContainer.insertAdjacentHTML('beforeend', cardFilm); // Ajouter le HTML
+}
+
+// 3. Parcourir la liste des films et les afficher
+listeFilms.forEach(film => {
+   afficherFilm(film); // Appeler la fonction pour chaque film
+});
+
 //Faire un bouton qui permet de choisir un film aléatoire à regarder ce soir
