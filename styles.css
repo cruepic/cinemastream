@@ -1,1 +1,38 @@
-/*faut ajouter cette balise en dessous de la balise 
+/*faut ajouter cette balise <div class="card">
+            <h2 class="card-title">Titre du Film</h2>
+            <p class="card-description">Ceci est une brève description du film. Découvrez ce chef-d'œuvre !</p>
+         </div> 
+entre la balise <div id="movie-container"> et la balise btn-container/*
+/* voici le style de la carte en css j'ajouterai des modifs au fur et à mesur/*
+
+body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   margin: 0;
+   background-color: #f5f5f5; /* Couleur de fond */
+   font-family: Arial, sans-serif;
+}
+
+
+.card {
+   background-color: white;
+   border-radius: 10px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   padding: 20px;
+   text-align: center;
+   max-width: 400px;
+   margin: 10px;
+}
+
+.card-title {
+   font-size: 1.5em;
+   margin: 10px 0;
+   color: #333;
+}
+
+.card-description {
+   font-size: 1em;
+   color: #666;
+}
