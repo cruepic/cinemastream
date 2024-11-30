@@ -3,7 +3,7 @@
             <p class="card-description">Ceci est une brève description du film. Découvrez ce chef-d'œuvre !</p>
          </div> 
 entre la balise <div id="movie-container"> et la balise btn-container/*
-/* voici le style de la carte en css j'ajouterai des modifs au fur et à mesur/*
+/* voici le style de la carte en css j'ajouterai des modifs au fur et à mesure*/
 
 body {
    display: flex;
@@ -11,7 +11,6 @@ body {
    align-items: center;
    min-height: 100vh;
    margin: 0;
-   background-color: #f5f5f5; /* Couleur de fond */
    font-family: Arial, sans-serif;
 }
 
